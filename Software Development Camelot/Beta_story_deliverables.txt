@@ -1,0 +1,104 @@
+conversation1 = false
+if !conversation1:
+
+	###ConversationDorothyPreHamlin
+
+	-Player talks to Dorothy before Hamlin
+	-Dorothy explains player should find Hamlin
+
+	NODE 4-5
+else:	
+	###ConversationDorothyPostHamlin
+	-Split choices: praise/insult 
+	praiseDorothy = false
+	if praiseDorothy:
+		-dorothy helps out
+		-dialog window (explain appearance of tavern)
+		-make Tavern accessible
+	else:
+		-dorothy shuts off
+		-dialog window hint (there must be a clue within the town, look for it within the buildings)
+		-open all doors (challenge player to find clue on their own)
+
+	NODES 4...9
+
+
+##DangerousForestWarning
+-Player arrives at Sedonia.North 
+
+-If visitingforestfirsttime: 
+	will prompt (flashback sequence explaining/showing some story why forest dangerous): 
+	witch was killed, witch spirit haunted people passing forest, possessed their souls (vfx poison, camerafocus, flashback)
+else:
+	prompts dialog window warning her that transition into forest without protection is fatal
+
+-If player chooses yes, transition to forest
+-Dialog window at both entrances to forest
+
+NODE 7-8, 9-10, 13-14, 17-18, 19-20
+
+###Elmwood1FirstTime
+###Elmwood1IgnoreNick - same fxn as ###ForestOneDeclineNickHelp
+-Go deeper in forest (arrive Elmwood.Eastend, transition to Elmwood2.Westend)
+-Bandits ambush player, steal coin
+-ForestSpirits attack and kill player (vfx death)
+
+NODES 10-13 (right branch)
+
+
+###Elmwood1TalkToNick
+###Elmwood1DeclineNickHelp
+-Go deeper in forest (arrive Elmwood.Eastend, transition to Elmwood2.Westend)
+-Bandits ambush player, steal coin
+-ForestSpirits attack and kill player (vfx death)
+
+NODES 11-14 (left-left branch)
+
+
+###Elmwood1TalkToNick
+###Elmwood1AcceptNickHelp
+-When player accept help, zoom out camera -lock player movement
+-Once Nicholaus transitions to second forest section, change focus back to player, enable player movemnt
+-Player goes to Elmwood2
+
+
+NODES 11-14 (left-right branch)
+
+###Elmwood2Sequence
+-Dialogue with Nick telling path is clear
+
+###Elmwood2TransitionToSpookyPath
+-Player wanders in Elmwood2
+-Discovers entrance to spooky path
+-Inner Dialog (Mirabel notices spookiness, go into spooky path? or not?)
+If gointospooky:
+	transitions to spooky_path
+NODES 14-15
+
+
+###Elmwood2TransitionToCityGinezin
+-Inner Dialog (Mirabel hears city sounds, hint maybe this is the way to town? go into town? or not?)
+If gointotown:
+	transitions to city_ginezin
+NODES 14-15
+
+
+###SpookyPathSequence
+-Player hears nearby convo and fireplace light
+
+###DontEavesDropBandits
+-Player decides not to follow voices
+-Free to go back into Elmwood2
+-player transitions back to Elmwood2
+
+-Inner Dialog (Mirabel hears city sounds, hint maybe this is the way to town? go into town? or not?)
+If gointotown:
+	transitions to city_ginezin
+
+NODES 14-15-15
+
+_________________________________________________________________________________________________________________
+
+
+
+
