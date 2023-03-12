@@ -1,0 +1,19 @@
+Before Gather, data_array = 102 103 0 0 0 0 0 0  in rank = 1
+Before Gather, data_array = 106 107 0 0 0 0 0 0  in rank = 3
+Before Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 3
+Before Gather, data_array = 104 105 0 0 0 0 0 0  in rank = 2
+Before Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 2
+Before Gather, data_array = 100 101 0 0 0 0 0 0  in rank = 0
+Before Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 0
+After Gather, data_array = 106 107 0 0 0 0 0 0  in rank = 3
+After Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 3
+After Gather, data_array = 104 105 0 0 0 0 0 0  in rank = 2
+After Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 2
+Before Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 1
+After Gather, data_array = 102 103 0 0 0 0 0 0  in rank = 1
+After Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 1
+After Gather, data_array = 100 101 0 0 0 0 0 0  in rank = 0
+After Gather, recv_buffer = 100 101 102 103 104 105 106 107  in rank = 0
+Avg = 103.5
+[1677861305.850011] [compute035:30360:0]         tcp_ep.c:1042 UCX  ERROR tcp_ep 0x78ede0 (state=CONNECTED): recv(45) failed: Connection reset by remote peer
+slurmstepd: error: *** JOB 52037 ON compute035 CANCELLED AT 2023-03-03T10:36:29 DUE TO TIME LIMIT ***

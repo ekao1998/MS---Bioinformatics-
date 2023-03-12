@@ -1,0 +1,8 @@
+Before Bcast, data = 0 in rank = 2
+Before Bcast, data = 0 in rank = 0
+Before Bcast, data = 0 in rank = 1
+Before Bcast, data = 0 in rank = 3
+After Bcast, data = 100 in rank = 0
+After Bcast, data = 100 in rank = 1
+After Bcast, data = 100 in rank = 3
+After Bcast, data = 100 in rank = 2

@@ -1,0 +1,20 @@
+rank: 0> torus_rank= 0, coords=(0,0)
+MPI rank= 0 I have a DOWN neighbor rank= 2
+MPI rank= 0 I have a UP neighbor rank= 2
+MPI rank= 0 I have a LEFT neighbor rank= 1
+MPI rank= 0 I have a RIGHT neighbor rank= 1
+rank: 2> torus_rank= 2, coords=(1,0)
+MPI rank= 2 I have a DOWN neighbor rank= 0
+MPI rank= 2 I have a UP neighbor rank= 0
+MPI rank= 2 I have a LEFT neighbor rank= 3
+MPI rank= 2 I have a RIGHT neighbor rank= 3
+rank: 1> torus_rank= 1, coords=(0,1)
+MPI rank= 1 I have a DOWN neighbor rank= 3
+MPI rank= 1 I have a UP neighbor rank= 3
+MPI rank= 1 I have a LEFT neighbor rank= 0
+MPI rank= 1 I have a RIGHT neighbor rank= 0
+rank: 3> torus_rank= 3, coords=(1,1)
+MPI rank= 3 I have a DOWN neighbor rank= 1
+MPI rank= 3 I have a UP neighbor rank= 1
+MPI rank= 3 I have a LEFT neighbor rank= 2
+MPI rank= 3 I have a RIGHT neighbor rank= 2

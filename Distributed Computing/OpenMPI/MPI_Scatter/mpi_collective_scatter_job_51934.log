@@ -1,0 +1,16 @@
+Before Scatter, data array = 100 101 102 103 104 105 106 107  in rank 0
+Before Scatter, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 0
+After Scatter, data array = 100 101 102 103 104 105 106 107  in rank 0
+After Scatter, recv_buffer = 100 101 0 0 0 0 0 0  in rank = 0
+Before Scatter, data array = 0 0 0 0 0 0 0 0  in rank 2
+Before Scatter, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 2
+Before Scatter, data array = 0 0 0 0 0 0 0 0  in rank 1
+Before Scatter, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 1
+Before Scatter, data array = 0 0 0 0 0 0 0 0  in rank 3
+After Scatter, data array = 0 0 0 0 0 0 0 0  in rank 2
+After Scatter, recv_buffer = 104 105 0 0 0 0 0 0  in rank = 2
+Before Scatter, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 3
+After Scatter, data array = 0 0 0 0 0 0 0 0  in rank 1
+After Scatter, recv_buffer = 102 103 0 0 0 0 0 0  in rank = 1
+After Scatter, data array = 0 0 0 0 0 0 0 0  in rank 3
+After Scatter, recv_buffer = 106 107 0 0 0 0 0 0  in rank = 3

@@ -1,0 +1,20 @@
+Before Gather, data_array = 102 103 0 0 0 0 0 0  in rank = 1
+Before Gather, data_array = 106 107 0 0 0 0 0 0  in rank = 3
+Before Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 3
+Before Gather, data_array = 100 101 0 0 0 0 0 0  in rank = 0
+Before Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 0
+Before Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 1
+Before Gather, data_array = 104 105 0 0 0 0 0 0  in rank = 2
+Before Gather, recv_buffer = 0 0 0 0 0 0 0 0  in rank = 2
+After Gather, data_array = 104 105 0 0 0 0 0 0  in rank = 2
+After Gather, recv_buffer = 100 101 102 103 104 105 106 107  in rank = 2
+Avg = 103.5
+After Gather, data_array = 100 101 0 0 0 0 0 0  in rank = 0
+After Gather, recv_buffer = 100 101 102 103 104 105 106 107  in rank = 0
+Avg = 103.5
+After Gather, data_array = 106 107 0 0 0 0 0 0  in rank = 3
+After Gather, recv_buffer = 100 101 102 103 104 105 106 107  in rank = 3
+After Gather, data_array = 102 103 0 0 0 0 0 0  in rank = 1
+Avg = 103.5
+After Gather, recv_buffer = 100 101 102 103 104 105 106 107  in rank = 1
+Avg = 103.5

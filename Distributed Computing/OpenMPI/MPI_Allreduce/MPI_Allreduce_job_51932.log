@@ -1,0 +1,8 @@
+rank 3 calculated partial_sum 2187500012500000
+rank 1 calculated partial_sum 937500012500000
+rank 2 calculated partial_sum 1562500012500000
+rank 0 calculated partial_sum 312500012500000
+Total sum of the array elements is 5000000050000000 in rank 1
+Total sum of the array elements is 5000000050000000 in rank 3
+Total sum of the array elements is 5000000050000000 in rank 0
+Total sum of the array elements is 5000000050000000 in rank 2

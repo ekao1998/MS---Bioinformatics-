@@ -1,0 +1,8 @@
+sendcounts[0] = 1	displs[0] = 0
+sendcounts[1] = 2	displs[1] = 4
+sendcounts[2] = 3	displs[2] = 8
+sendcounts[3] = 4	displs[3] = 12
+0: a2: i	j	k	
+	
+1: e	f	
+3: m	n	o	p	

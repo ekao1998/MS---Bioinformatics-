@@ -1,0 +1,10 @@
+     npoints          pi      nprocs         elapsed wall-clock time
+       1e+07     3.14129           1                        0.584715
+     npoints          pi      nprocs         elapsed wall-clock time
+       1e+07     3.14071           2                        0.303504
+     npoints          pi      nprocs         elapsed wall-clock time
+       1e+07     3.14026           4                        0.163876
+     npoints          pi      nprocs         elapsed wall-clock time
+       1e+07     3.13958           8                       0.0883766
+     npoints          pi      nprocs         elapsed wall-clock time
+       1e+07      3.1399          16                       0.0389509

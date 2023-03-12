@@ -1,0 +1,2 @@
+MPI process 0 sends values 1 , 4, and  7
+MPI process 1 received values 1 , 4, and  7
